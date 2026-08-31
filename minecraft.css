@@ -574,3 +574,79 @@ footer p {
     }
 
 }
+
+.download-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 25px;
+
+    background: linear-gradient(135deg, #ff1764, #ff0050);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(255, 23, 100, 0.3);
+
+    transition: 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 8px 25px rgba(255, 23, 100, 0.5);
+}
+
+.download-button:active {
+    transform: scale(0.95);
+}
+
+.download-alert {
+    position: fixed;
+
+    top: 90px;
+    right: 50%;
+
+    transform: translateX(50%) translateY(-30px);
+
+    background: rgba(20, 20, 20, 0.95);
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255, 23, 100, 0.6);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(255, 23, 100, 0.2);
+
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+
+    z-index: 9999;
+}
+
+.download-alert.show {
+    opacity: 1;
+
+    transform:
+        translateX(50%)
+        translateY(0);
+}
+
+.download-alert span {
+    color: #6cff9b;
+
+    font-size: 20px;
+
+    margin-left: 8px;
+}
